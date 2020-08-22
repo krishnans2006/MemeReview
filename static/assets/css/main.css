@@ -2549,7 +2549,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: rgba(108, 192, 145, 1);
+			color: rgba(255, 255, 255, 1) !important;
 		}
 
 		input[type="submit"]:active,
@@ -2557,7 +2558,8 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: rgba(108, 192, 145, 1);
+			color: rgba(255, 255, 255, 1) !important;
 		}
 
 		input[type="submit"].icon,
@@ -2617,7 +2619,8 @@
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #7ec89e;
+				background-color: rgba(255, 255, 255, 1);
+				color: rgba(108, 192, 145, 1) !important;
 			}
 
 			input[type="submit"].alt:active,
@@ -2887,7 +2890,7 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
+			/* vertical-align: middle; */
 			width: 5em;
 		}
 
