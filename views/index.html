@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Browser Tab Design-->
+    <title>Meme Review</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/05042400-6fe0-4cb0-b587-cc229e4c26ea%2Ffavicon.ico?v=1598140484736"
+      type="image/x-icon"
+    />
+
+    <!--Necesary Metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Node.JS Links-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+      integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="   https://cdnjs.cloudflare.com/ajax/libs/bounce.js/0.8.2/bounce.min.js"></script>
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"
+      integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css"
+      integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA=="
+      crossorigin="anonymous"
+    />
+
+    <!--Link Preview Descriptions-->
+    <meta
+      name="description"
+      content="Kick back, open a cold can of coke, take out your phone, and let's play some Meme Review"
+    />
+    <meta property="og:url" content="https://redic-meme.glitch.me" />
+    <meta
+      property="og:title"
+      content="Meme Review - Helping Judge Memes Since 2020"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to Meme Review. Kick back, open a cold can of coke, take out your phone or computer, and let's play some Meme Review "
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/05042400-6fe0-4cb0-b587-cc229e4c26ea%2Ffavicon.ico?v=1598140484736"
+    />
+
+    <!--CSS File Link-->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <!--This is the main website-->
+  <body>
+    <!--This is the title of the webpage-->
+    <h1 id="title">Meme Review</h1>
+
+    <!-- Where the user is greeted -->
+    <h3 id="welcome"></h3>
+
+    <!--Location of GIFs-->
+    <div id="container">
+      <!--Centers image-->
+      <div id="images" class="center">
+        <!--The first image-->
+        <div class="image">
+          <h3 class="imagetitle">Gif 1:</h3>
+          <div class="onlyimage">
+            <a onclick="vote(1)">
+              <img src="https://i.gifer.com/g2vO.gif" id="img1" />
+            </a>
+          </div>
+        </div>
+
+        <!--The second image-->
+        <div class="image">
+          <h3 class="imagetitle">Gif 2:</h3>
+          <div class="onlyimage">
+            <a onclick="vote(2)"
+              ><img
+                src="https://vincematsko.files.wordpress.com/2017/09/sample.gif?w=400&h=400&zoom=2"
+                id="img2"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Game Info-->
+      <div class="info">
+        <!--Question Number-->
+        <span id="info-question">
+          <h1>Meme #</h1>
+          <h2 id="qnum">0</h2>
+        </span>
+
+        <!--Amount of Players-->
+        <span id="info-players">
+          <h1>Players</h1>
+          <h2 id="players">0</h2>
+        </span>
+
+        <!--Eleminated Information-->
+        <span id="info-eliminated">
+          <h1>Your Place</h1>
+          <h2 id="eliminated">0</h2>
+        </span>
+
+        <!--Your Points-->
+        <span id="info-payout">
+          <h1>Your Points</h1>
+          <h2 id="payout">0</h2>
+        </span>
+      </div>
+    </div>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
