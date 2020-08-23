@@ -91,6 +91,7 @@ img{
     margin-left:2vw;
     margin-right:2vw;
     border-radius:10px;
+  cursor: pointer;
     width: 20vw;
 }
 
@@ -177,7 +178,7 @@ h1 {
 h2 {
   font-family: Montserrat, sans-serif;
   font-size: .75rem;
-  font-weight: normal;
+  font-weight: normal; 
   color: var(--neutralLight);
 }
 
